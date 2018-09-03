@@ -1,0 +1,21 @@
+;; 函数 变量 宏
+(defun name (parameter*)
+  "Optional  documentation string."
+  body-form*)
+
+(defun hello-world() (format t "hello world"))
+;; 后面的format是一个表达式
+
+(defun verbose-sum(x y)
+  "sum any two numbers after printing a message."
+  (format t "summing ~d and ~d.~%" x y)
+  (+ x y))
+;; 参数必须根据形参传递
+;; 函数调用实参映射到函数形参
+;; 可选形参
+
+(defun foo (a b &optional c d ) (list a b c d))
+
+       (foo  1 2)
+
+(foo  1 2 3)
