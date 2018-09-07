@@ -58,3 +58,8 @@
 ;; 禁用启动信息
 (setq inhibit-startup-message t)
 
+;; 不生成备份文件
+(setq make-backup-files nil)
+
+;; 设置光标颜色
+(set-face-background 'cursor "red")
